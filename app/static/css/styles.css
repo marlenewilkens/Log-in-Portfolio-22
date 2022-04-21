@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Homemade+Apple&family=Playfair+Display&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'DM Mono', monospace;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.css-needed.open
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 10000;
+}
+.open .layer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	animation: open 1s ease-in-out forwards;
+}
+.open .layer:nth-child(1)
+{
+	background: #000;
+	z-index: 2;
+}
+.open .layer:nth-child(2)
+{
+	background: rgb(255, 174, 0);
+	animation-delay: 1s;
+	z-index: 1;
+}
+@keyframes open
+{
+	0%
+	{
+		transform: scaleY(1);
+	}
+	100%
+	{
+		transform: scaleY(0);
+	}
+}
+
+header
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-navi
+{
+    float: left;
+    position: absolute;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-navi li
+{
+    display: inline-block;
+}
+.main-navi li.active a
+{
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+.main-navi li a:hover
+{
+    border: 1px solid black;
+}
+.main-navi li a
+{
+    color:black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 15px;
+}
+
+.header_image
+{
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
+.TextLandingPage
+h1
+{
+    color: deeppink;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 300px;
+    font-size: 36px;
+    font-family: 'Homemade Apple', cursive;
+}
+p
+{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 300px;
+    font-size: 15px;
+    font-family: 'DM Mono', monospace;
+}
+
+.contact
+{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: 1300px;
+    font-size: 15px;
+    font-family: 'DM Mono', monospace;
+
+}
+
+
+.slideshow-container{
+    width: 100%;
+    height: auto;
+    margin-top: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-img{
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 24px;
+    font-family: 'DM Mono', monospace;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 24px;
+    font-family: 'DM Mono', monospace;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+
+}

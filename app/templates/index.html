@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+<html>
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+   
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+
+		<header>
+
+			<div class="row">
+				<div class="header_image">
+				<img src="../static/Stefanie.jpg">
+				</div>
+			<ul class="main-navi">
+				<li class="active"><a href="#">Start</a></li>
+				<li class="button1"><a href="#portfolio_start">Portfolio</a></li>
+                <li class="button2"><a href="#contactMe">Contact</a></li>
+			</ul>
+			</div>
+
+			<div class="TextLandingPage">
+			<h1>Marlene Wilkens</h1><br>
+			<p> <br>Interaction Design Student @ CODE Berlin
+				<br>BA Fashion and Textile Management
+				<br>Styling Assistant</p>
+			</div>
+			
+			<div class="contact" id="contactMe">
+				<p> <br>Send me a mail to get in touch:
+					<br><a href="mailto:marlene.wilkens@code.berlin">marlene.wilkens@code.berlin</a>  
+					<br>
+					<br>
+					<br>
+			</div>
+
+	
+		<div class="slideshow-container" id= "portfolio_start">
+			<div class="slide-img">
+				<img src="../static/billie2.jpg" id="last" alt=""> 
+				<img src="../static/billie.jpg" alt=""> 
+				<img src="../static/dualipa.jpg" alt="">
+				<img src="../static/blonde_cover.jpg" alt="">
+				<img src="../static/blonde2.jpg" alt="">
+				<img src="../static/header_image.jpg" alt=""> 
+				<img src="../static/billie2.jpg" alt=""> 
+				<img src="../static/billie2.jpg" alt=""> 
+				<img src="../static/billie.jpg" id="first" alt="">
+		</div>
+  
+		<button id="prevBtn">Prev</button>
+		<button id="nextBtn">Next</button>  
+
+		<script src="../static/javascript/apps.js"></script> 
+			
+
+		</header>
+{% endblock %}
